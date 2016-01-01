@@ -14,6 +14,7 @@
 		D9094F5D1C370714002F98D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F5C1C370714002F98D4 /* UIKit.framework */; };
 		D9094F5F1C37071E002F98D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F5E1C37071E002F98D4 /* Foundation.framework */; };
 		D9094F611C370726002F98D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F601C370726002F98D4 /* CoreGraphics.framework */; };
+		D9094F641C370771002F98D4 /* libiSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F631C370771002F98D4 /* libiSpeechSDK.a */; };
 		D99DBD5A1C305BF000C1D47C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DBD591C305BF000C1D47C /* AppDelegate.swift */; };
 		D99DBD5C1C305BF000C1D47C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DBD5B1C305BF000C1D47C /* ViewController.swift */; };
 		D99DBD5F1C305BF000C1D47C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99DBD5D1C305BF000C1D47C /* Main.storyboard */; };
@@ -48,6 +49,13 @@
 		D9094F5C1C370714002F98D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D9094F5E1C37071E002F98D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D9094F601C370726002F98D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D9094F631C370771002F98D4 /* libiSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiSpeechSDK.a; sourceTree = "<group>"; };
+		D9094F661C37077C002F98D4 /* iSpeechSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSpeechSDK.h; sourceTree = "<group>"; };
+		D9094F671C37077C002F98D4 /* ISSpeechRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechRecognition.h; sourceTree = "<group>"; };
+		D9094F681C37077C002F98D4 /* ISSpeechRecognitionLocales.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechRecognitionLocales.h; sourceTree = "<group>"; };
+		D9094F691C37077C002F98D4 /* ISSpeechRecognitionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechRecognitionResult.h; sourceTree = "<group>"; };
+		D9094F6A1C37077C002F98D4 /* ISSpeechSynthesis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechSynthesis.h; sourceTree = "<group>"; };
+		D9094F6B1C37077C002F98D4 /* ISSpeechSynthesisVoices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechSynthesisVoices.h; sourceTree = "<group>"; };
 		D99DBD561C305BF000C1D47C /* AdviceMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdviceMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99DBD591C305BF000C1D47C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99DBD5B1C305BF000C1D47C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9094F641C370771002F98D4 /* libiSpeechSDK.a in Frameworks */,
 				D9094F611C370726002F98D4 /* CoreGraphics.framework in Frameworks */,
 				D9094F5F1C37071E002F98D4 /* Foundation.framework in Frameworks */,
 				D9094F5D1C370714002F98D4 /* UIKit.framework in Frameworks */,
@@ -98,6 +107,7 @@
 		D9094F621C37072D002F98D4 /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
+				D9094F631C370771002F98D4 /* libiSpeechSDK.a */,
 				D9094F601C370726002F98D4 /* CoreGraphics.framework */,
 				D9094F5E1C37071E002F98D4 /* Foundation.framework */,
 				D9094F5C1C370714002F98D4 /* UIKit.framework */,
@@ -107,6 +117,19 @@
 				D9094F541C3706ED002F98D4 /* CFNetwork.framework */,
 			);
 			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		D9094F651C37077C002F98D4 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D9094F661C37077C002F98D4 /* iSpeechSDK.h */,
+				D9094F671C37077C002F98D4 /* ISSpeechRecognition.h */,
+				D9094F681C37077C002F98D4 /* ISSpeechRecognitionLocales.h */,
+				D9094F691C37077C002F98D4 /* ISSpeechRecognitionResult.h */,
+				D9094F6A1C37077C002F98D4 /* ISSpeechSynthesis.h */,
+				D9094F6B1C37077C002F98D4 /* ISSpeechSynthesisVoices.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 		D99DBD4D1C305BF000C1D47C = {
@@ -133,6 +156,7 @@
 		D99DBD581C305BF000C1D47C /* AdviceMe */ = {
 			isa = PBXGroup;
 			children = (
+				D9094F651C37077C002F98D4 /* Headers */,
 				D99DBD591C305BF000C1D47C /* AppDelegate.swift */,
 				D99DBD5B1C305BF000C1D47C /* ViewController.swift */,
 				D99DBD5D1C305BF000C1D47C /* Main.storyboard */,
@@ -435,6 +459,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AdviceMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WOK.AdviceMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -446,6 +474,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AdviceMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WOK.AdviceMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
