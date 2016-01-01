@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9094F551C3706ED002F98D4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F541C3706ED002F98D4 /* CFNetwork.framework */; };
+		D9094F571C3706F3002F98D4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F561C3706F3002F98D4 /* Security.framework */; };
+		D9094F591C3706FA002F98D4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F581C3706FA002F98D4 /* SystemConfiguration.framework */; };
+		D9094F5B1C370704002F98D4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F5A1C370704002F98D4 /* AudioToolbox.framework */; };
+		D9094F5D1C370714002F98D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F5C1C370714002F98D4 /* UIKit.framework */; };
+		D9094F5F1C37071E002F98D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F5E1C37071E002F98D4 /* Foundation.framework */; };
+		D9094F611C370726002F98D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F601C370726002F98D4 /* CoreGraphics.framework */; };
 		D99DBD5A1C305BF000C1D47C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DBD591C305BF000C1D47C /* AppDelegate.swift */; };
 		D99DBD5C1C305BF000C1D47C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DBD5B1C305BF000C1D47C /* ViewController.swift */; };
 		D99DBD5F1C305BF000C1D47C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99DBD5D1C305BF000C1D47C /* Main.storyboard */; };
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9094F541C3706ED002F98D4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D9094F561C3706F3002F98D4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D9094F581C3706FA002F98D4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D9094F5A1C370704002F98D4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D9094F5C1C370714002F98D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D9094F5E1C37071E002F98D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D9094F601C370726002F98D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D99DBD561C305BF000C1D47C /* AdviceMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdviceMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99DBD591C305BF000C1D47C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99DBD5B1C305BF000C1D47C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +68,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9094F611C370726002F98D4 /* CoreGraphics.framework in Frameworks */,
+				D9094F5F1C37071E002F98D4 /* Foundation.framework in Frameworks */,
+				D9094F5D1C370714002F98D4 /* UIKit.framework in Frameworks */,
+				D9094F5B1C370704002F98D4 /* AudioToolbox.framework in Frameworks */,
+				D9094F591C3706FA002F98D4 /* SystemConfiguration.framework in Frameworks */,
+				D9094F571C3706F3002F98D4 /* Security.framework in Frameworks */,
+				D9094F551C3706ED002F98D4 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +95,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9094F621C37072D002F98D4 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				D9094F601C370726002F98D4 /* CoreGraphics.framework */,
+				D9094F5E1C37071E002F98D4 /* Foundation.framework */,
+				D9094F5C1C370714002F98D4 /* UIKit.framework */,
+				D9094F5A1C370704002F98D4 /* AudioToolbox.framework */,
+				D9094F581C3706FA002F98D4 /* SystemConfiguration.framework */,
+				D9094F561C3706F3002F98D4 /* Security.framework */,
+				D9094F541C3706ED002F98D4 /* CFNetwork.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
 		D99DBD4D1C305BF000C1D47C = {
 			isa = PBXGroup;
 			children = (
+				D9094F621C37072D002F98D4 /* FrameWorks */,
 				D99DBD581C305BF000C1D47C /* AdviceMe */,
 				D99DBD6D1C305BF100C1D47C /* AdviceMeTests */,
 				D99DBD781C305BF100C1D47C /* AdviceMeUITests */,
@@ -482,6 +518,7 @@
 				D99DBD801C305BF100C1D47C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D99DBD811C305BF100C1D47C /* Build configuration list for PBXNativeTarget "AdviceMeTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +527,7 @@
 				D99DBD831C305BF100C1D47C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D99DBD841C305BF100C1D47C /* Build configuration list for PBXNativeTarget "AdviceMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +536,7 @@
 				D99DBD861C305BF100C1D47C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
