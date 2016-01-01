@@ -38,6 +38,9 @@
                     <state key="normal" title="Recognize">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="recognize:" destination="-1" eventType="touchUpInside" id="ubS-4C-ZwO"/>
+                    </connections>
                 </button>
             </subviews>
             <animations/>

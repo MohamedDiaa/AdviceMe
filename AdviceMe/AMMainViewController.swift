@@ -57,8 +57,6 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate {
         }
     }
     
-    
-    
     func recognition(speechRecognition: ISSpeechRecognition!, didFailWithError error: NSError!) {
         
     }
@@ -76,46 +74,5 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate {
     func recognitionDidFinishRecording(speechRecognition: ISSpeechRecognition!) {
         
     }
-
-    /*
-    - (void)recognition:(ISSpeechRecognition *)speechRecognition didGetRecognitionResult:(ISSpeechRecognitionResult *)result {
-    NSLog(@"Method: %@", NSStringFromSelector(_cmd));
-    NSLog(@"Result: %@", result.text);
-    
-    [label setText:result.text];
-    }
-    
-    - (void)recognition:(ISSpeechRecognition *)speechRecognition didFailWithError:(NSError *)error {
-    NSLog(@"Method: %@", NSStringFromSelector(_cmd));
-    NSLog(@"Error: %@", error);
-    }
-    
-    - (void)recognitionCancelledByUser:(ISSpeechRecognition *)speechRecognition {
-    NSLog(@"Method: %@", NSStringFromSelector(_cmd));
-    }
-    
-    - (void)recognitionDidBeginRecording:(ISSpeechRecognition *)speechRecognition {
-    NSLog(@"Method: %@", NSStringFromSelector(_cmd));
-    }
-    
-    - (void)recognitionDidFinishRecording:(ISSpeechRecognition *)speechRecognition {
-    NSLog(@"Method: %@", NSStringFromSelector(_cmd));
-    }
-    
-    - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    [self.view endEditing:YES];
-    }
-
-    */
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
