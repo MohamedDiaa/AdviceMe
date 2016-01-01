@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+       
+        //[[iSpeechSDK sharedSDK] setAPIKey:@"3b22c4d7279156d6fdf2d3f52a36f1e7"]; //developerdemokeydeveloperdemokey
+        
+        iSpeechSDK.sharedSDK().APIKey = "3b22c4d7279156d6fdf2d3f52a36f1e7"
+        
         return true
     }
 

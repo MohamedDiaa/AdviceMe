@@ -15,6 +15,9 @@
 		D9094F5F1C37071E002F98D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F5E1C37071E002F98D4 /* Foundation.framework */; };
 		D9094F611C370726002F98D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F601C370726002F98D4 /* CoreGraphics.framework */; };
 		D9094F641C370771002F98D4 /* libiSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9094F631C370771002F98D4 /* libiSpeechSDK.a */; };
+		D9094F721C37087C002F98D4 /* AMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9094F701C37087C002F98D4 /* AMMainViewController.swift */; };
+		D9094F731C37087C002F98D4 /* AMMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9094F711C37087C002F98D4 /* AMMainViewController.xib */; };
+		D9094F751C370C07002F98D4 /* iSpeechSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9094F741C370C07002F98D4 /* iSpeechSDK.bundle */; };
 		D99DBD5A1C305BF000C1D47C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DBD591C305BF000C1D47C /* AppDelegate.swift */; };
 		D99DBD5C1C305BF000C1D47C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DBD5B1C305BF000C1D47C /* ViewController.swift */; };
 		D99DBD5F1C305BF000C1D47C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99DBD5D1C305BF000C1D47C /* Main.storyboard */; };
@@ -56,6 +59,10 @@
 		D9094F691C37077C002F98D4 /* ISSpeechRecognitionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechRecognitionResult.h; sourceTree = "<group>"; };
 		D9094F6A1C37077C002F98D4 /* ISSpeechSynthesis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechSynthesis.h; sourceTree = "<group>"; };
 		D9094F6B1C37077C002F98D4 /* ISSpeechSynthesisVoices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechSynthesisVoices.h; sourceTree = "<group>"; };
+		D9094F6C1C3707FE002F98D4 /* AdviceMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdviceMe-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9094F701C37087C002F98D4 /* AMMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMMainViewController.swift; sourceTree = "<group>"; };
+		D9094F711C37087C002F98D4 /* AMMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMMainViewController.xib; sourceTree = "<group>"; };
+		D9094F741C370C07002F98D4 /* iSpeechSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iSpeechSDK.bundle; sourceTree = "<group>"; };
 		D99DBD561C305BF000C1D47C /* AdviceMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdviceMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99DBD591C305BF000C1D47C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99DBD5B1C305BF000C1D47C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +114,7 @@
 		D9094F621C37072D002F98D4 /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
+				D9094F741C370C07002F98D4 /* iSpeechSDK.bundle */,
 				D9094F631C370771002F98D4 /* libiSpeechSDK.a */,
 				D9094F601C370726002F98D4 /* CoreGraphics.framework */,
 				D9094F5E1C37071E002F98D4 /* Foundation.framework */,
@@ -163,6 +171,9 @@
 				D99DBD601C305BF000C1D47C /* Assets.xcassets */,
 				D99DBD621C305BF000C1D47C /* LaunchScreen.storyboard */,
 				D99DBD651C305BF000C1D47C /* Info.plist */,
+				D9094F6C1C3707FE002F98D4 /* AdviceMe-Bridging-Header.h */,
+				D9094F701C37087C002F98D4 /* AMMainViewController.swift */,
+				D9094F711C37087C002F98D4 /* AMMainViewController.xib */,
 			);
 			path = AdviceMe;
 			sourceTree = "<group>";
@@ -291,7 +302,9 @@
 			files = (
 				D99DBD641C305BF000C1D47C /* LaunchScreen.storyboard in Resources */,
 				D99DBD611C305BF000C1D47C /* Assets.xcassets in Resources */,
+				D9094F751C370C07002F98D4 /* iSpeechSDK.bundle in Resources */,
 				D99DBD5F1C305BF000C1D47C /* Main.storyboard in Resources */,
+				D9094F731C37087C002F98D4 /* AMMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9094F721C37087C002F98D4 /* AMMainViewController.swift in Sources */,
 				D99DBD5C1C305BF000C1D47C /* ViewController.swift in Sources */,
 				D99DBD5A1C305BF000C1D47C /* AppDelegate.swift in Sources */,
 			);
@@ -457,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AdviceMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -465,6 +480,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WOK.AdviceMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdviceMe/AdviceMe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -472,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AdviceMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -480,6 +498,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.WOK.AdviceMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdviceMe/AdviceMe-Bridging-Header.h";
 			};
 			name = Release;
 		};

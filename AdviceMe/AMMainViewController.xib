@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMMainViewController" customModule="AdviceMe" customModuleProvider="target">
+            <connections>
+                <outlet property="textLabel" destination="J8T-MG-FGH" id="Ape-ax-GmQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8T-MG-FGH">
+                    <rect key="frame" x="50" y="30" width="500" height="200"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="t9E-wR-vTL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzY-tK-IEn">
+                    <rect key="frame" x="219" y="268" width="162" height="60"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.52941179275512695" blue="0.84705883264541626" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="7FG-BF-DVi"/>
+                        <constraint firstAttribute="width" constant="162" id="8Ld-Wh-3h6"/>
+                    </constraints>
+                    <state key="normal" title="Recognize">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EzY-tK-IEn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2bM-bg-d4y"/>
+                <constraint firstItem="J8T-MG-FGH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="A2J-yx-ny1"/>
+                <constraint firstItem="EzY-tK-IEn" firstAttribute="top" secondItem="J8T-MG-FGH" secondAttribute="bottom" constant="38" id="P7h-FM-EuG"/>
+                <constraint firstAttribute="trailing" secondItem="J8T-MG-FGH" secondAttribute="trailing" constant="50" id="u8S-Rx-cqR"/>
+                <constraint firstItem="J8T-MG-FGH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="zzf-oG-C6T"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
