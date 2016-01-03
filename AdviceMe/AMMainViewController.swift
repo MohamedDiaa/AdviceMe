@@ -26,23 +26,6 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate {
     }
     
     
-    /*
-    
-    - (IBAction)recognize:(id)sender {
-    recognition = [[ISSpeechRecognition alloc] init];
-    
-    recognition.freeformType = ISFreeFormTypeDictation;
-    
-    NSError *err;
-    [recognition setDelegate:self];
-    
-    if(![recognition listenAndRecognizeWithTimeout:10 error:&err]) {
-    NSLog(@"ERROR: %@", err);
-    }
-    
-    }
-
-    */
     
     @IBAction func recognize(sender:UIButton)
     {
@@ -52,8 +35,15 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate {
         self.recognition = recognition
         
         recognition.listenAndRecognizeWithTimeout(10) { (error, result, success) -> Void in
-            
-         self.textLabel.text = result.text
+       
+            if !success
+            {
+                self.textLabel.text = result.text
+            }
+            let loadVC = LoadingViewController()
+            self.addChildViewController(loadVC)
+            self.view.addSubview(loadVC.view)
+
         }
     }
     
@@ -63,6 +53,7 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate {
     func recognition(speechRecognition: ISSpeechRecognition!, didGetRecognitionResult result: ISSpeechRecognitionResult!) {
         
         self.textLabel.text = result.text
+        
 
     }
     func recognitionCancelledByUser(speechRecognition: ISSpeechRecognition!) {

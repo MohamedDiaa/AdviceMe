@@ -18,6 +18,7 @@
 		D9094F721C37087C002F98D4 /* AMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9094F701C37087C002F98D4 /* AMMainViewController.swift */; };
 		D9094F731C37087C002F98D4 /* AMMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9094F711C37087C002F98D4 /* AMMainViewController.xib */; };
 		D9094F751C370C07002F98D4 /* iSpeechSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9094F741C370C07002F98D4 /* iSpeechSDK.bundle */; };
+		D9094F771C39B11E002F98D4 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9094F761C39B11E002F98D4 /* LoadingViewController.swift */; };
 		D99DBD5A1C305BF000C1D47C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DBD591C305BF000C1D47C /* AppDelegate.swift */; };
 		D99DBD5C1C305BF000C1D47C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DBD5B1C305BF000C1D47C /* ViewController.swift */; };
 		D99DBD5F1C305BF000C1D47C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99DBD5D1C305BF000C1D47C /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		D9094F701C37087C002F98D4 /* AMMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMMainViewController.swift; sourceTree = "<group>"; };
 		D9094F711C37087C002F98D4 /* AMMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMMainViewController.xib; sourceTree = "<group>"; };
 		D9094F741C370C07002F98D4 /* iSpeechSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iSpeechSDK.bundle; sourceTree = "<group>"; };
+		D9094F761C39B11E002F98D4 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		D99DBD561C305BF000C1D47C /* AdviceMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdviceMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99DBD591C305BF000C1D47C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99DBD5B1C305BF000C1D47C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				D9094F6C1C3707FE002F98D4 /* AdviceMe-Bridging-Header.h */,
 				D9094F701C37087C002F98D4 /* AMMainViewController.swift */,
 				D9094F711C37087C002F98D4 /* AMMainViewController.xib */,
+				D9094F761C39B11E002F98D4 /* LoadingViewController.swift */,
 			);
 			path = AdviceMe;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				D9094F721C37087C002F98D4 /* AMMainViewController.swift in Sources */,
 				D99DBD5C1C305BF000C1D47C /* ViewController.swift in Sources */,
 				D99DBD5A1C305BF000C1D47C /* AppDelegate.swift in Sources */,
+				D9094F771C39B11E002F98D4 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
