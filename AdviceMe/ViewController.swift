@@ -32,6 +32,10 @@ class ViewController: UIViewController {
         self.view.addConstraints([c1,c2,c3,c4])
         
         
+        let s = Servicehandler()
+        s.searchQuote("albert") { (quotesList) -> Void in
+            
+        }
         
     }
 
