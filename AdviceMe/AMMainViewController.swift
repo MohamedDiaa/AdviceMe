@@ -17,6 +17,7 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate , UIT
     
     var recognition : ISSpeechRecognition?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,13 +45,11 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate , UIT
         recognition.freeformType = UInt(ISFreeFormTypeDictation)
         recognition.delegate = self
         self.recognition = recognition
-        
+     
         recognition.listenAndRecognizeWithTimeout(10) { (error, result, success) -> Void in
        
-            if !success
-            {
-                self.textLabel.text = result.text
-            }
+            self.textLabel.text = result.text
+            
             let loadVC = LoadingViewController()
             self.addChildViewController(loadVC)
             self.view.addSubview(loadVC.view)
@@ -58,6 +57,9 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate , UIT
         }
     }
     
+    //*********//***********//*********//********//*******//
+    //*********//***********//*********//********//*******//
+
     func recognition(speechRecognition: ISSpeechRecognition!, didFailWithError error: NSError!) {
         
     }
@@ -77,8 +79,9 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate , UIT
         
     }
 
-    
     //*********//***********//*********//********//*******//
+    //*********//***********//*********//********//*******//
+
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("AdviceTableViewCell") as! AdviceTableViewCell

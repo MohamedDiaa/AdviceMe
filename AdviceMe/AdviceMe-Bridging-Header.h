@@ -3,3 +3,4 @@
 //
 
 #import "iSpeechSDK.h"
+#import "Reachability.h"
