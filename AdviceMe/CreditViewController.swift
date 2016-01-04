@@ -22,11 +22,13 @@ class CreditViewController: UIViewController {
     }
     
     /*
-        I Will add here credit for
+        I Will add a credit here for
         
         -Quote.org
         -iSpeech 
         -SwiftaDay linda dong
+        -Alamofire
+        -AEXML
     */
 
 }
