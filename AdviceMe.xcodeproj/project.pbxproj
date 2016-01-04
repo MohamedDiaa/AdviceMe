@@ -26,6 +26,8 @@
 		D9094F831C3AFCE5002F98D4 /* AdviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9094F821C3AFCE5002F98D4 /* AdviceTableViewCell.swift */; };
 		D9094F871C3B0165002F98D4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D9094F861C3B0165002F98D4 /* Reachability.m */; };
 		D9094F891C3B0294002F98D4 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9094F881C3B0294002F98D4 /* Helper.swift */; };
+		D9094F8C1C3B0B8F002F98D4 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9094F8A1C3B0B8F002F98D4 /* CreditViewController.swift */; };
+		D9094F8D1C3B0B8F002F98D4 /* CreditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9094F8B1C3B0B8F002F98D4 /* CreditViewController.xib */; };
 		D99DBD5A1C305BF000C1D47C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DBD591C305BF000C1D47C /* AppDelegate.swift */; };
 		D99DBD5C1C305BF000C1D47C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99DBD5B1C305BF000C1D47C /* ViewController.swift */; };
 		D99DBD5F1C305BF000C1D47C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99DBD5D1C305BF000C1D47C /* Main.storyboard */; };
@@ -82,6 +84,8 @@
 		D9094F851C3B0165002F98D4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		D9094F861C3B0165002F98D4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		D9094F881C3B0294002F98D4 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		D9094F8A1C3B0B8F002F98D4 /* CreditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
+		D9094F8B1C3B0B8F002F98D4 /* CreditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditViewController.xib; sourceTree = "<group>"; };
 		D99DBD561C305BF000C1D47C /* AdviceMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdviceMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99DBD591C305BF000C1D47C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99DBD5B1C305BF000C1D47C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 				D9094F761C39B11E002F98D4 /* LoadingViewController.swift */,
 				D9094F7A1C3AEE75002F98D4 /* Servicehandler.swift */,
 				D9094F7E1C3AF5AF002F98D4 /* Advice.swift */,
+				D9094F8A1C3B0B8F002F98D4 /* CreditViewController.swift */,
+				D9094F8B1C3B0B8F002F98D4 /* CreditViewController.xib */,
 			);
 			path = AdviceMe;
 			sourceTree = "<group>";
@@ -352,6 +358,7 @@
 			files = (
 				D99DBD641C305BF000C1D47C /* LaunchScreen.storyboard in Resources */,
 				D9094F811C3AF9ED002F98D4 /* AdviceTableViewCell.xib in Resources */,
+				D9094F8D1C3B0B8F002F98D4 /* CreditViewController.xib in Resources */,
 				D99DBD611C305BF000C1D47C /* Assets.xcassets in Resources */,
 				D9094F751C370C07002F98D4 /* iSpeechSDK.bundle in Resources */,
 				D99DBD5F1C305BF000C1D47C /* Main.storyboard in Resources */,
@@ -435,6 +442,7 @@
 				D99DBD5A1C305BF000C1D47C /* AppDelegate.swift in Sources */,
 				D9094F891C3B0294002F98D4 /* Helper.swift in Sources */,
 				D9094F771C39B11E002F98D4 /* LoadingViewController.swift in Sources */,
+				D9094F8C1C3B0B8F002F98D4 /* CreditViewController.swift in Sources */,
 				D9094F7F1C3AF5AF002F98D4 /* Advice.swift in Sources */,
 				D9094F831C3AFCE5002F98D4 /* AdviceTableViewCell.swift in Sources */,
 			);
