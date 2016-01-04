@@ -29,12 +29,12 @@ protocol CircleViewDelegate
     func animationDidFinish(circleView :CircleView)
 }
 
+
 class CircleView: UIView {
     
     var delegate : CircleViewDelegate?
     
     let circleLayer = CAShapeLayer()
-    
     
     init(frame: CGRect , delegate :CircleViewDelegate ) {
         super.init(frame: frame)
@@ -80,9 +80,7 @@ class CircleView: UIView {
         circleLayer.addAnimation(animation, forKey: "animateCircle")
         CATransaction.commit()
     }
-    
-    
-} 
+}
 
 
 class LoadingViewController: UIViewController, CircleViewDelegate  {
@@ -132,5 +130,5 @@ class LoadingViewController: UIViewController, CircleViewDelegate  {
         self.view.removeFromSuperview()
         self.removeFromParentViewController()
     }
-    }
+}
 

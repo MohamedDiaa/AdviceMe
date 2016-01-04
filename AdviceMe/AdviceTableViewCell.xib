@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdviceTableViewCell" rowHeight="136" id="HzU-N6-Xgp" customClass="AdviceTableViewCell" customModule="AdviceMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HzU-N6-Xgp" id="qTv-bS-Nu5">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Albert Einstain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXG-bd-DTu">
+                        <rect key="frame" x="8" y="9" width="304" height="29"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="W4S-8M-Ks4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello from other Black hole side Hello from other Black hole sideHello from other Black hole side" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGu-hr-PYh">
+                        <rect key="frame" x="8" y="38" width="304" height="89"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="TGu-hr-PYh" firstAttribute="top" secondItem="oXG-bd-DTu" secondAttribute="bottom" id="Q05-gn-qzx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TGu-hr-PYh" secondAttribute="bottom" id="Uad-uf-MZX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TGu-hr-PYh" secondAttribute="trailing" id="Var-7Q-QBM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oXG-bd-DTu" secondAttribute="trailing" id="dtC-sb-jEN"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="oXG-bd-DTu" secondAttribute="leading" id="m7o-FB-R7Q"/>
+                    <constraint firstItem="oXG-bd-DTu" firstAttribute="top" secondItem="qTv-bS-Nu5" secondAttribute="topMargin" constant="1" id="va0-nf-ogP"/>
+                    <constraint firstItem="TGu-hr-PYh" firstAttribute="leading" secondItem="qTv-bS-Nu5" secondAttribute="leadingMargin" id="vu3-md-CfT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="adviceLabel" destination="TGu-hr-PYh" id="dpc-xf-MLt"/>
+                <outlet property="authorLabel" destination="oXG-bd-DTu" id="uOF-BO-tud"/>
+            </connections>
+            <point key="canvasLocation" x="178" y="293"/>
+        </tableViewCell>
+    </objects>
+</document>

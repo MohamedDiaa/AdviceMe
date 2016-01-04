@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMMainViewController" customModule="AdviceMe" customModuleProvider="target">
             <connections>
+                <outlet property="advicesTableView" destination="hBW-q6-baG" id="A3y-M7-Hkf"/>
                 <outlet property="textLabel" destination="J8T-MG-FGH" id="Ape-ax-GmQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -17,23 +18,23 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8T-MG-FGH">
-                    <rect key="frame" x="50" y="30" width="500" height="200"/>
+                    <rect key="frame" x="50" y="35" width="500" height="60"/>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="200" id="t9E-wR-vTL"/>
+                        <constraint firstAttribute="height" constant="60" id="t9E-wR-vTL"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzY-tK-IEn">
-                    <rect key="frame" x="219" y="268" width="162" height="60"/>
+                    <rect key="frame" x="250" y="105" width="100" height="30"/>
                     <animations/>
                     <color key="backgroundColor" red="0.0" green="0.52941179275512695" blue="0.84705883264541626" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="7FG-BF-DVi"/>
-                        <constraint firstAttribute="width" constant="162" id="8Ld-Wh-3h6"/>
+                        <constraint firstAttribute="height" constant="30" id="7FG-BF-DVi"/>
+                        <constraint firstAttribute="width" constant="100" id="8Ld-Wh-3h6"/>
                     </constraints>
                     <state key="normal" title="Recognize">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,15 +43,28 @@
                         <action selector="recognize:" destination="-1" eventType="touchUpInside" id="ubS-4C-ZwO"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hBW-q6-baG">
+                    <rect key="frame" x="0.0" y="145" width="600" height="455"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Hwc-FF-Wg7"/>
+                        <outlet property="delegate" destination="-1" id="cyR-6o-CPq"/>
+                    </connections>
+                </tableView>
             </subviews>
             <animations/>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
                 <constraint firstItem="EzY-tK-IEn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2bM-bg-d4y"/>
                 <constraint firstItem="J8T-MG-FGH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="A2J-yx-ny1"/>
-                <constraint firstItem="EzY-tK-IEn" firstAttribute="top" secondItem="J8T-MG-FGH" secondAttribute="bottom" constant="38" id="P7h-FM-EuG"/>
+                <constraint firstAttribute="trailing" secondItem="hBW-q6-baG" secondAttribute="trailing" id="D8c-eP-3IU"/>
+                <constraint firstAttribute="bottom" secondItem="hBW-q6-baG" secondAttribute="bottom" id="FH6-HR-vDq"/>
+                <constraint firstItem="EzY-tK-IEn" firstAttribute="top" secondItem="J8T-MG-FGH" secondAttribute="bottom" constant="10" id="P7h-FM-EuG"/>
+                <constraint firstItem="hBW-q6-baG" firstAttribute="top" secondItem="EzY-tK-IEn" secondAttribute="bottom" constant="10" id="XD5-Om-I6k"/>
+                <constraint firstItem="hBW-q6-baG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cZr-To-O4B"/>
                 <constraint firstAttribute="trailing" secondItem="J8T-MG-FGH" secondAttribute="trailing" constant="50" id="u8S-Rx-cqR"/>
-                <constraint firstItem="J8T-MG-FGH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="zzf-oG-C6T"/>
+                <constraint firstItem="J8T-MG-FGH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="zzf-oG-C6T"/>
             </constraints>
         </view>
     </objects>

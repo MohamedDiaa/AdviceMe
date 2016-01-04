@@ -8,9 +8,12 @@
 
 import UIKit
 
-class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate {
+class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate , UITableViewDataSource,UITableViewDelegate{
 
     @IBOutlet var textLabel :UILabel!
+    @IBOutlet var advicesTableView : UITableView!
+    
+    var adviceList : [Advice]?
     
     var recognition : ISSpeechRecognition?
     
@@ -18,14 +21,22 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.advicesTableView.registerNib(UINib(nibName: "AdviceTableViewCell", bundle: nil), forCellReuseIdentifier: "AdviceTableViewCell")
+        
+        self.advicesTableView.rowHeight = UITableViewAutomaticDimension
+        self.advicesTableView.estimatedRowHeight = 100.0
+    
+        let s = Servicehandler()
+        s.searchQuote("albert") { (quotesList) -> Void in
+            self.adviceList = quotesList
+            self.advicesTableView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
     @IBAction func recognize(sender:UIButton)
     {
@@ -66,4 +77,27 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate {
         
     }
 
+    
+    //*********//***********//*********//********//*******//
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("AdviceTableViewCell") as! AdviceTableViewCell
+        
+        if let list = adviceList where list.count > indexPath.row
+        {
+            cell.setWithAdvice(list[indexPath.row])
+        }
+    
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if let list = adviceList
+        {
+            return list.count
+        }
+        return  0
+    }
+    
 }
