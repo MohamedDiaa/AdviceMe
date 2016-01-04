@@ -73,8 +73,8 @@ class CircleView: UIView {
         self.circleLayer.strokeEnd = 1.0
         
         CATransaction.setCompletionBlock { () -> Void in
-            self.delegate?.animationDidFinish(self)
             self.removeFromSuperview()
+            self.delegate?.animationDidFinish(self)
         }
         
         circleLayer.addAnimation(animation, forKey: "animateCircle")
@@ -93,7 +93,7 @@ class LoadingViewController: UIViewController, CircleViewDelegate  {
             let maxShapes = 11
             for i in 0..<maxShapes {
                 //Creates concentric circles
-                self.view.addSubview(self.createCircle(320 - CGFloat(i*22)))
+                self.view.addSubview(self.createCircle(100 - CGFloat(i*22)))
             }
             
         }
