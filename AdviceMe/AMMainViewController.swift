@@ -27,11 +27,6 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate , UIT
         self.advicesTableView.rowHeight = UITableViewAutomaticDimension
         self.advicesTableView.estimatedRowHeight = 100.0
     
-        let s = Servicehandler()
-        s.searchQuote("albert") { (quotesList) -> Void in
-            self.adviceList = quotesList
-            self.advicesTableView.reloadData()
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,10 +49,11 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate , UIT
                 if result != nil
                 {
                     self.textLabel.text = result.text
-
+                    self.searchAdvise()
                     let loadVC = LoadingViewController()
                     self.addChildViewController(loadVC)
                     self.view.addSubview(loadVC.view)
+                    
                 }
             }
         }
@@ -75,11 +71,35 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate , UIT
             
         alertActionVC.addAction(action)
             self.presentViewController(alertActionVC, animated: true, completion: { () -> Void in
-                
-
-                
             })
             
+        }
+    }
+    
+    func searchAdvise()
+    {
+        if let text = textLabel.text where !text.isEmpty
+        {
+            let s = Servicehandler()
+            s.searchQuote(text) { (quotesList) -> Void in
+            
+                self.adviceList = quotesList
+                self.advicesTableView.reloadData()
+            }
+        }
+        else
+        {
+            let alertActionVC = UIAlertController(title: "Oops", message: "Can you say again?", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
+                
+                alertActionVC.dismissViewControllerAnimated(true, completion: { () -> Void in
+                })
+            })
+            
+            alertActionVC.addAction(action)
+            self.presentViewController(alertActionVC, animated: true, completion: { () -> Void in
+            })
         }
     }
     

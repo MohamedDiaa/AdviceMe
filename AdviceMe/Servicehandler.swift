@@ -14,8 +14,10 @@ class Servicehandler: NSObject {
 
     func searchQuote(searchText : String , completion:(quotesList:[Advice]?) -> Void )
     {
+        let uid = 4704
+        let token = "gpZDtHdmCb4cUdHz"
     
-        let link = "http://www.stands4.com/services/v2/quotes.php?uid=4704&tokenid=gpZDtHdmCb4cUdHz&searchtype=SEARCH&query=Albert+Einstein"
+        let link = "http://www.stands4.com/services/v2/quotes.php?uid=\(uid)&tokenid=\(token)&searchtype=SEARCH&query=\(searchText)"
         
         let linkString = link.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet()) ?? link
 
@@ -23,8 +25,8 @@ class Servicehandler: NSObject {
             .responseData { response in
                 
                 print(response.request)
-                print(response.response)
-                print(response.result)
+               // print(response.response)
+               // print(response.result)
                 
              if let data = response.data
              {
