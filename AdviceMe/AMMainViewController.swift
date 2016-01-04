@@ -61,7 +61,7 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate , UIT
         else
         {
         
-            let alertActionVC = UIAlertController(title: "Error", message: "No in ternet ya A7a mafysh 5als", preferredStyle: UIAlertControllerStyle.Alert)
+            let alertActionVC = UIAlertController(title: "Oops", message: "Could not summon the souls of the Wise men,Please check your internet connection", preferredStyle: UIAlertControllerStyle.Alert)
             
             let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
               
