@@ -50,12 +50,15 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate , UIT
      
             recognition.listenAndRecognizeWithTimeout(10) { (error, result, success) -> Void in
        
-                self.textLabel.text = result.text
-            
-                let loadVC = LoadingViewController()
-                self.addChildViewController(loadVC)
-                self.view.addSubview(loadVC.view)
                 
+                if result != nil
+                {
+                    self.textLabel.text = result.text
+
+                    let loadVC = LoadingViewController()
+                    self.addChildViewController(loadVC)
+                    self.view.addSubview(loadVC.view)
+                }
             }
         }
         else

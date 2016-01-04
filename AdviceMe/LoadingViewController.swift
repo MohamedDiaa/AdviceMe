@@ -73,7 +73,7 @@ class CircleView: UIView {
         self.circleLayer.strokeEnd = 1.0
         
         CATransaction.setCompletionBlock { () -> Void in
-            //self.delegate?.animationDidFinish(self)
+            self.delegate?.animationDidFinish(self)
             self.removeFromSuperview()
         }
         
@@ -127,8 +127,11 @@ class LoadingViewController: UIViewController, CircleViewDelegate  {
     
     func animationDidFinish(circleView: CircleView) {
         
+        if self.view.subviews.count == 0
+        {
         self.view.removeFromSuperview()
         self.removeFromParentViewController()
+        }
     }
 }
 

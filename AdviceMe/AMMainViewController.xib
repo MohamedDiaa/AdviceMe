@@ -18,18 +18,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8T-MG-FGH">
-                    <rect key="frame" x="50" y="35" width="500" height="60"/>
+                    <rect key="frame" x="50" y="90" width="500" height="35"/>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="t9E-wR-vTL"/>
+                        <constraint firstAttribute="height" constant="35" id="t9E-wR-vTL"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzY-tK-IEn">
-                    <rect key="frame" x="250" y="105" width="100" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzY-tK-IEn" customClass="RoundedCornerButton" customModule="AdviceMe" customModuleProvider="target">
+                    <rect key="frame" x="250" y="135" width="100" height="30"/>
                     <animations/>
                     <color key="backgroundColor" red="0.0" green="0.52941179275512695" blue="0.84705883264541626" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -44,7 +44,7 @@
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hBW-q6-baG">
-                    <rect key="frame" x="0.0" y="145" width="600" height="455"/>
+                    <rect key="frame" x="0.0" y="175" width="600" height="425"/>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
@@ -52,19 +52,31 @@
                         <outlet property="delegate" destination="-1" id="cyR-6o-CPq"/>
                     </connections>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIr-YU-bya" userLabel="Header Label">
+                    <rect key="frame" x="50" y="35" width="500" height="41"/>
+                    <animations/>
+                    <string key="text">You will find what the wise men would advice you in your problem?
+Just Ask them</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.52941179279999995" blue="0.84705883260000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <animations/>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
                 <constraint firstItem="EzY-tK-IEn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2bM-bg-d4y"/>
+                <constraint firstItem="LIr-YU-bya" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="7nr-B6-Oaz"/>
+                <constraint firstItem="LIr-YU-bya" firstAttribute="trailing" secondItem="J8T-MG-FGH" secondAttribute="trailing" id="9ke-nn-dBb"/>
                 <constraint firstItem="J8T-MG-FGH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="A2J-yx-ny1"/>
                 <constraint firstAttribute="trailing" secondItem="hBW-q6-baG" secondAttribute="trailing" id="D8c-eP-3IU"/>
                 <constraint firstAttribute="bottom" secondItem="hBW-q6-baG" secondAttribute="bottom" id="FH6-HR-vDq"/>
                 <constraint firstItem="EzY-tK-IEn" firstAttribute="top" secondItem="J8T-MG-FGH" secondAttribute="bottom" constant="10" id="P7h-FM-EuG"/>
                 <constraint firstItem="hBW-q6-baG" firstAttribute="top" secondItem="EzY-tK-IEn" secondAttribute="bottom" constant="10" id="XD5-Om-I6k"/>
                 <constraint firstItem="hBW-q6-baG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cZr-To-O4B"/>
+                <constraint firstItem="LIr-YU-bya" firstAttribute="leading" secondItem="J8T-MG-FGH" secondAttribute="leading" id="gum-sb-7zA"/>
+                <constraint firstItem="J8T-MG-FGH" firstAttribute="top" secondItem="LIr-YU-bya" secondAttribute="bottom" constant="14" id="mEb-tX-PEw"/>
                 <constraint firstAttribute="trailing" secondItem="J8T-MG-FGH" secondAttribute="trailing" constant="50" id="u8S-Rx-cqR"/>
-                <constraint firstItem="J8T-MG-FGH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="zzf-oG-C6T"/>
             </constraints>
         </view>
     </objects>

@@ -35,3 +35,16 @@ func detectInternet() -> Bool
         return true
     }
 }
+
+class RoundedCornerButton : UIButton
+{
+
+    override func layoutSubviews() {
+        
+        super.layoutSubviews()
+        self.layer.cornerRadius = 5
+        self.layer.masksToBounds = true
+        
+    }
+
+}
