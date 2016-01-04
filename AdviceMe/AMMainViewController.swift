@@ -41,19 +41,42 @@ class AMMainViewController: UIViewController , ISSpeechRecognitionDelegate , UIT
     
     @IBAction func recognize(sender:UIButton)
     {
-        let recognition = ISSpeechRecognition()
-        recognition.freeformType = UInt(ISFreeFormTypeDictation)
-        recognition.delegate = self
-        self.recognition = recognition
+        if detectInternet()
+        {
+            let recognition = ISSpeechRecognition()
+            recognition.freeformType = UInt(ISFreeFormTypeDictation)
+            recognition.delegate = self
+            self.recognition = recognition
      
-        recognition.listenAndRecognizeWithTimeout(10) { (error, result, success) -> Void in
+            recognition.listenAndRecognizeWithTimeout(10) { (error, result, success) -> Void in
        
-            self.textLabel.text = result.text
+                self.textLabel.text = result.text
             
-            let loadVC = LoadingViewController()
-            self.addChildViewController(loadVC)
-            self.view.addSubview(loadVC.view)
+                let loadVC = LoadingViewController()
+                self.addChildViewController(loadVC)
+                self.view.addSubview(loadVC.view)
+                
+            }
+        }
+        else
+        {
+        
+            let alertActionVC = UIAlertController(title: "Error", message: "No in ternet ya A7a mafysh 5als", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
+              
+                alertActionVC.dismissViewControllerAnimated(true, completion: { () -> Void in
+                    
+                })
+            })
+            
+        alertActionVC.addAction(action)
+            self.presentViewController(alertActionVC, animated: true, completion: { () -> Void in
+                
 
+                
+            })
+            
         }
     }
     
