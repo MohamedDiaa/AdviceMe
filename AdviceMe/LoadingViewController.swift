@@ -82,7 +82,7 @@ class CircleView: UIView {
     }
     
     
-}
+} 
 
 
 class LoadingViewController: UIViewController, CircleViewDelegate  {
