@@ -1,5 +1,6 @@
 # AdviceMe
-This is simple Source file for iOS App that make Speech recognition ,and use it to get Quotes from providers 
+This is iOS App that make Speech recognition retrieve text ,and use it to get quotes from providers 
+It shows how can you grap libraries ,SDK and tools from around github and build something cool within hour 
 
 The App uses 
 
