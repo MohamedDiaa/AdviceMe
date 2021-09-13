@@ -1,5 +1,5 @@
 # AdviceMe
-This is simple Source file for iOS App that make Speech recognition ,and use it to get Quotes from providers 
+This is simple source file for iOS App that make Speech recognition ,and use it to get Quotes from providers 
 
 The App uses 
 
